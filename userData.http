@@ -1,0 +1,92 @@
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "name": "Adam Richard",
+  "password": "richard_567",
+  "gender": "male",
+  "location": "Detroit"
+}
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "adam_smith",
+  "name": "Adam smith",
+  "password": "adam@123",
+  "gender": "male",
+  "location": "Detroit"
+}
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "vamsi_511",
+  "name": "VamsiKrishna",
+  "password": "vamsi@511",
+  "gender": "male",
+  "location": "Raipur"
+}
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_789"
+}
+
+###
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "adam_smith",
+  "oldPassword": "adam@123",
+  "newPassword": "adam_123"
+}
+
+###
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "adam_smith",
+  "oldPassword": "adam@123",
+  "newPassword": "adam"
+}
+
+###
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "adam_smith",
+  "oldPassword": "adam@123",
+  "newPassword": "ada"
+}
+###
+
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "vamsi_511",
+  "oldPassword": "vamsi@511",
+  "newPassword": "vams"
+}
